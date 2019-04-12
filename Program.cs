@@ -6,7 +6,16 @@ namespace aspcore_001_sofn_primeiro_projeto
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool helloWorld = true;
+
+            if (helloWorld)
+            {
+                Console.WriteLine("Hello World!");
+            }
+            else
+            {
+                Console.WriteLine("Bye");
+            }            
         }
     }
 }
