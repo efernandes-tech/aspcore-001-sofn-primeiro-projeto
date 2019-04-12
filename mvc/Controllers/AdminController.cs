@@ -9,6 +9,8 @@ namespace mvc.Controllers
         [HttpGet("principal/{nome}/{numero:int?}")]
         public IActionResult Index(string nome, int numero)
         {
+            // https://localhost:5001/painel/admin/principal/Ederson
+            // https://localhost:5001/painel/admin/principal/Ederson/10
             return Content("Vc "+nome+" é nota " + numero);
         }
 
@@ -16,7 +18,9 @@ namespace mvc.Controllers
         [HttpGet("rota2")]
         public IActionResult Teste()
         {
-            return Content("Aprendendo ASP.NET Core");
+            // https://localhost:5001/painel/admin/rota1?nome=Ederson
+            var nome = Request.Query["nome"];
+            return Content("Aprendendo ASP.NET Core " + nome);
         }
     }
 }
