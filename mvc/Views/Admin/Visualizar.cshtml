@@ -1,0 +1,12 @@
+@{
+    <!-- Layout = "_Layout"; --> <!-- Layout padrão carregado automaticamente. -->
+    <!-- Layout = null; --> <!-- Não carrega o layout, ou pode definir outro layout. -->
+}
+
+<h2>Minha Primeira VIEW</h2>
+
+@if((bool) ViewData["helloWorld"]){
+    <h3>@ViewData["nome"]</h3>
+} else {
+    <h3>Tchau</h3>
+}
