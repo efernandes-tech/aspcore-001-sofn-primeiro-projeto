@@ -21,3 +21,8 @@
 - Projeto de console
     - Executar
         dotnet run
+- Criando projeto ASP.NET Core
+    - Criando projeto ASP.NET Core Web App (MVC)
+        dotnet new mvc
+    - Executar.
+        dotnet run
