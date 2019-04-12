@@ -1,5 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 
 namespace mvc.Controllers
 {
@@ -31,6 +32,22 @@ namespace mvc.Controllers
 
             return View();
             // return View("Nada");
+        }
+
+        [HttpGet("form")]
+        public IActionResult Form()
+        {
+            return View();
+        }
+
+        [HttpPost("dados")]
+        public IActionResult Dados()
+        {
+            StringValues nome;
+            StringValues email;
+            Request.Form.TryGetValue("nome", out nome);
+            Request.Form.TryGetValue("email", out email);
+            return Content("Formulário enviado " + nome + " " + email);
         }
     }
 }
