@@ -26,3 +26,6 @@
         dotnet new mvc
     - Executar.
         dotnet run
+- Controllers.
+    - Manter servidor rodando.
+        dotnet watch run
