@@ -1,0 +1,20 @@
+# aspcore-001-sofn-primeiro-projeto
+
+# Anotações:
+- O que é .NET core
+    |-----------------------------------------------------------------------------|
+    | WPF | Windows Forms | ASP.Net (4.X) | ASP.Net Core | Universal Windows Apps |
+    |-----------------------------------------------------------------------------|
+    |      .NET Framework 4.6 (biblioteca)      |      .NET Core (biblioteca)     |
+    |-----------------------------------------------------------------------------|
+    | Common: Runtime Components, Compilers, NuGet Packages                       |
+    |-----------------------------------------------------------------------------|
+- Dotnet cli
+    - Ferramenta de linha de comando.
+        dotnet
+    - Comandos disponiveis.
+        dotnet --help
+    - Tipos de projetos para criar.
+        dotnet new --help
+    - Criando aplicação de console.
+        dotnet new console 
