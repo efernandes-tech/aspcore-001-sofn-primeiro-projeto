@@ -1,1 +1,1 @@
-"# aspcore-001-sofn-primeiro-projeto" 
+# aspcore-001-sofn-primeiro-projeto
